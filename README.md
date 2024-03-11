@@ -10,3 +10,18 @@ To address this issue, the company has decided to implement a Business Intellige
          Key Insights – To display the findings or key insights we learnt from analysis.
 ## The EER diagram below shows the relationships between the tables.
 
+## Project Execution
+Step – 1
+The first step was to load the (mysqlsampledatabase)data into MySQL Database and connect it to the Power BI.
+Step –  2
+Review the Database relationship created by Power BI.
+Step – 3
+Data validation using some tables in Power BI and matching the values with the data provided.
+Step – 4 
+Transform and clean the Data as needed using Power Query Editor within Power BI Desktop. This involves renaming columns, removing null values , removing unnecessary column like: image.
+Step – 5
+Created columns in Power Query like Employee that concatenate the firstName and lastName of Employee
+Step – 7
+Created calculated columns using DAX formulas (Formulas listed at the bottom). After the columns were created, verified them in either MySQL or Excel file.
+Step – 8
+Build visualization by dragging fields from your data tables onto the canvas in Power BI Desktop.
