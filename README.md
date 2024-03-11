@@ -33,17 +33,27 @@ Step – 8 Build visualization by dragging fields from your data tables onto the
 
 ## Key Findings:
 · USA, Spain and France are the three countries, the most of the sales comes from over the years.
+
 · The Sales was in the Peak in November may because holiday season and end-of-year festivities (like: Thanksgiving , Black Friday etc.). Many individuals may choose to purchase classic cars as gifts for 
   themselves or loved ones during this time, leading to increased sales.
+  
 · The Total Orders placed by customers are 2996 and the Total Sales of the Company is $9.6 Million and made profit of 
   $ 3.8 Million.
+  
 · Total Distinct customer are 94. Most of the Customers are from USA.
+
 · The Total employee count of the company is 22.
+
 · Total no. of Products are 110. Most of the Product is Classic Cars.
+
 · Classic Cars, Vintage Cars and Motor Cycles are the three product Categories earned more profit among the categories.
+
 · 1992 Ferrari 360 Spider Red was the Top most selling car following by 2001 Ferrari Enzo and 1952 Alpine Renault 1300.
+
 · Euro+ Shopping Channel, Mini Gifts Distribution Ltd., and Australian Collectors Co., are the 3 top customers bought products in high numbers.
+
 · Gerald Hernandez, Leslie Jennings and Pamela Castillo are the three sales representatives who achieved better sales target compare to others.
+
 · Barry Jones and Pamela Castillo have most no. of Customers.
 
 ## Measures Created(DAX):
