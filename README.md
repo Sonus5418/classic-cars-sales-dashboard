@@ -37,8 +37,7 @@ Step – 8 Build visualization by dragging fields from your data tables onto the
 · The Sales was in the Peak in November may because holiday season and end-of-year festivities (like: Thanksgiving , Black Friday etc.). Many individuals may choose to purchase classic cars as gifts for 
   themselves or loved ones during this time, leading to increased sales.
   
-· The Total Orders placed by customers are 2996 and the Total Sales of the Company is $9.6 Million and made profit of 
-  $ 3.8 Million.
+· The Total Orders placed by customers are 2996 and the Total Sales of the Company is $9.6 Million and made profit of $ 3.8 Million.
   
 · Total Distinct customer are 94. Most of the Customers are from USA.
 
