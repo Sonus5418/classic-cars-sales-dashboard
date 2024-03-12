@@ -1,0 +1,144 @@
+	use classicmodels;
+
+-- Total customers
+
+	elect count(distinct customerNumber) as Total_customer 
+	from customers;
+
+-- Total Products for Sale
+
+	select count(productName) as Total_Products
+	from products;
+
+-- Total Orders Placed
+
+	select count(*) as Total_Orders
+	from orderdetails;
+
+-- Total Quantity Ordered
+	
+	select sum(quantityOrdered) AS Quantity_Ordered
+	from orderdetails;
+
+-- Total Sales
+
+	select sum(quantityOrdered * priceEach) as Total_Sales
+	from orderdetails;
+
+-- Total Profit
+
+	select sum(quantityOrdered * priceEach) - sum(buyPrice * quantityOrdered) as Total_Profit
+	from orderdetails o inner join products p 
+	on o.productCode=p.productCode;
+
+-- Total Sales and Total profit Over months and Quarter
+
+	select monthname(orderdate)as Month,quarter(orderdate)as Quarter_of_year,sum(quantityOrdered * priceEach) as Total_Sales,sum(quantityOrdered * priceEach) - sum(buyPrice * quantityOrdered) as Total_Profit
+	from orderdetails od inner join orders o 
+	on od.orderNumber=o.orderNumber inner join products p 
+	on od.productCode=p.productCode
+	group by monthname(orderdate),quarter(orderdate);
+
+-- Total Sales by year and previous year
+
+	WITH YearlySales 
+	AS (
+    	SELECT YEAR(orderDate) AS OrderYear, sum(quantityOrdered * priceEach) AS TotalSales
+    	FROM orderdetails od inner join orders o 
+		on od.orderNumber=o.orderNumber 
+    	GROUP BY OrderYear
+	)
+	SELECT OrderYear, TotalSales AS CurrentYearSales, LAG(TotalSales) OVER (ORDER BY OrderYear)AS PreviousYearSales,
+       		TotalSales - LAG(TotalSales) OVER (ORDER BY OrderYear) AS SalesDifference
+	FROM YearlySales;
+
+-- Quantity ordered by Productline
+
+	select pl.productline,sum(quantityOrdered) as Quantity_Orderd
+	from orderdetails od inner join products p 
+	on od.productCode=p.productCode inner join productlines pl
+	on p.productline=pl.productline
+	group by pl.productline
+	order by sum(quantityOrdered) DESC;
+
+-- Top 5 Customers by Total Sales
+
+	select customerName ,  sum(quantityOrdered * priceEach) AS TotalSales,Rank()over(Order by sum(quantityOrdered * priceEach) desc) as Ranking
+	from customers c 
+	inner join orders o 
+		on c.customerNumber =o.customerNumber 
+	inner join orderdetails od 
+		on od.orderNumber=o.orderNumber 
+	group by customerName
+	order by TotalSales Desc
+	limit 5;
+
+-- Top 5 Selling Products by TotalSales
+
+	select productName,sum(quantityOrdered * priceEach) AS TotalSales,Rank()over(Order by sum(quantityOrdered * priceEach) desc) as Ranking
+	from orderdetails od inner join products p 
+		on od.productCode=p.productCode
+	group by productName
+	order by TotalSales Desc
+	limit 5;
+
+-- Top 5 Selling Products  by Quantity Ordered
+
+	select productName,sum(quantityOrdered) AS Quantity_Ordered,Rank()over(Order by sum(quantityOrdered) desc) as Ranking
+	from orderdetails od inner join products p 
+		on od.productCode=p.productCode
+	group by productName
+	order by Quantity_Ordered Desc
+	limit 5;
+
+-- Total Sales by Country
+
+	select country,sum(quantityOrdered * priceEach) AS TotalSales,Rank()over(Order by sum(quantityOrdered * priceEach) desc) as Ranking
+	from customers c 
+	inner join orders o 
+		on c.customerNumber =o.customerNumber 
+	inner join orderdetails od 
+		on od.orderNumber=o.orderNumber 
+	group by country
+	order by TotalSales Desc;
+ 
+ -- Total Quantity Ordered by Country
+ 
+	select country,sum(quantityOrdered) AS Quantity_Ordered,Rank()over(Order by sum(quantityOrdered) desc) as Ranking
+	from customers c 
+	inner join orders o 
+		on c.customerNumber =o.customerNumber 
+	inner join orderdetails od 
+		on od.orderNumber=o.orderNumber 
+	group by country
+	order by Quantity_Ordered Desc;
+
+-- Total Employees
+
+	select count(distinct employeeNumber) as Total_Employees
+	from employees;
+
+-- Total Customers Served by each employee
+
+	select concat(firstName,space(1),lastName) as Employee,count(distinct customerNumber) as Total_customer 
+	from customers c
+	inner join employees e
+		on c.salesRepEmployeeNumber = e.employeeNumber
+	group by Employee
+	order by Total_customer desc; 
+
+-- Employee by Total Sales ,Total Profit,Total Orders ,Ranked by Total Sales
+
+	select concat(firstName,space(1),lastName) as Employee,count(o.orderNumber) as Total_Orders,sum(quantityOrdered * priceEach) - sum(buyPrice * quantityOrdered) as Total_Profit,
+	sum(quantityOrdered * priceEach) AS TotalSales,Rank()over(Order by sum(quantityOrdered * priceEach) desc) as Ranking
+	from customers c
+	inner join employees e
+		on c.salesRepEmployeeNumber = e.employeeNumber
+	inner join orders o 
+		on c.customerNumber =o.customerNumber 
+	inner join orderdetails od 
+		on od.orderNumber=o.orderNumber
+	inner join products p 
+		on od.productCode=p.productCode
+	group by  Employee
+	order by TotalSales DESC ;
