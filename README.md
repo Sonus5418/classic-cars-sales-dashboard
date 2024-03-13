@@ -76,7 +76,7 @@ The goal of the capstone project is to design and implement a BI solution using 
 ## Conclusion:
 The Classic Cars Sales Dashboard provides valuable insights into the company's sales performance, customer behavior, and product trends. By leveraging Power BI and SQL, Axon can make data-driven decisions to improve sales strategies and enhance customer satisfaction.
 
-For more detailed insights, refer to the Power BI reports and analysis provided in the dashboard screenshots.
+For more detailed insights, refer to the Power BI reports and analysis provided in the dashboard .
 
 ---
 
