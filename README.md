@@ -25,7 +25,7 @@ To address this issue, the company has decided to implement a Business Intellige
         
 
 ## SANPSHOTS:
-![SALES VIEW](https://github.com/Sonus5418/classic-cars-sales-dashboard/blob/main/classic%20cars%20dashboards/classic%20car%201.jpg
+![SALES VIEW](https://github.com/Sonus5418/classic-cars-sales-dashboard/blob/main/classic%20cars%20dashboards/classic%20car%201.jpg)
 ## Project Execution
 Step – 1 The first step was to load the (mysqlsampledatabase)data into MySQL Database and connect it to the Power BI.
 
