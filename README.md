@@ -66,6 +66,16 @@ Step – 8 Build visualization by dragging fields from your data tables onto the
 · Gerald Hernandez, Leslie Jennings and Pamela Castillo are the three sales representatives who achieved better sales target compare to others.
 
 · Barry Jones and Pamela Castillo have most no. of Customers.
+## PROJECT STRUCTURE:
+classic-cars-sales-dashboard/
+│
+├── classic_cars_dashboards/
+│   ├── classic_car_1.jpg
+│   └── classic_car_2.jpg
+│    └── classic_car_3.jpg
+├── eer_diagram.jpg
+└── README.md
+
 
 ## Measures Created(DAX):
 1.	Total Sales	= SUMX('classicmodels orderdetails','classicmodels orderdetails'[quantityOrdered] * 'classicmodels orderdetails'[priceEach])
