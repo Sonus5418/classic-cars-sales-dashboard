@@ -5,6 +5,7 @@ A small company Axon, which is a retailer selling classic cars, is facing issues
 To address this issue, the company has decided to implement a Business Intelligence (Bl) tool that can help them manage and analyze their sales data effectively. They have shortlisted Microsoft Power BI and SQL as the Bl tools for this project.
 ## Task: 
  The goal of the capstone project is to design and implement a Bl solution using Power BI and SQL that can help the company manage and analyze their sales data effectively. 
+ ![EER DIAGRAM](https://github.com/Sonus5418/classic-cars-sales-dashboard/blob/main/eer%20%20diagram.jpg)
 ## Tools Used:
 -My Sql
 -Pivot Table and charts
