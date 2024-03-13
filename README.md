@@ -25,7 +25,7 @@ To address this issue, the company has decided to implement a Business Intellige
         
 ![sales view](https://github.com/Sonus5418/classic-cars-sales-dashboard/blob/main/classic%20cars%20dashboards/classic%20car%201.jpg)
 
-
+![Employee view](classic cars dashboards/classic car 2.jpg)
         
 
 ## Project Execution
