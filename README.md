@@ -56,22 +56,22 @@ The goal of the capstone project is to design and implement a BI solution using 
 - Barry Jones and Pamela Castillo have the most customers.
 
 ## Measures Created(DAX):
-1.	Total Sales	= SUMX('classicmodels orderdetails','classicmodels orderdetails'[quantityOrdered] * 'classicmodels orderdetails'[priceEach])
+1.	**Total Sales**	= SUMX('classicmodels orderdetails','classicmodels orderdetails'[quantityOrdered] * 'classicmodels orderdetails'[priceEach])
 
-2.	Total Profit	= [Total Sales] - SUMX('classicmodels orderdetails', RELATED('classicmodels products'[buyPrice]) * 'classicmodels orderdetails'[quantityOrdered])
+2.	**Total Profit**	          = [Total Sales] - SUMX('classicmodels orderdetails', RELATED('classicmodels products'[buyPrice]) * 'classicmodels orderdetails'[quantityOrdered])
 
-3.	Total no. of Product= countrows('classicmodels products')
+3.	**Total no. of Product**    = countrows('classicmodels products')
 
-4.	Total no. of Orders 	= COUNTROWS('classicmodels orderdetails')
+4.	**Total no. of Orders**     = COUNTROWS('classicmodels orderdetails')
 
-5.	Total Employees 	= DISTINCTCOUNT('classicmodels employees'[Employee])
+5.	**Total Employees** 	      = DISTINCTCOUNT('classicmodels employees'[Employee])
 
-6.	Total Customers 	= DISTINCTCOUNT('classicmodels customers'[customerNumber])
+6.	**Total Customers** 	      = DISTINCTCOUNT('classicmodels customers'[customerNumber])
 
-7.	sum of quantity ordered 	= sum('classicmodels orderdetails'[quantityOrdered])
+7.	**sum of quantity ordered** = sum('classicmodels orderdetails'[quantityOrdered])
 
-8.	Last year sales	= CALCULATE(SUMX('classicmodels orderdetails','classicmodels orderdetails'[quantityOrdered] * 'classicmodels orderdetails'[priceEach]),
-                 SAMEPERIODLASTYEAR('classicmodels orders'[orderDate].[Date]))
+8.	**Last year sales**	        = CALCULATE(SUMX('classicmodels orderdetails','classicmodels orderdetails'[quantityOrdered] * 'classicmodels orderdetails'[priceEach]),
+                                  SAMEPERIODLASTYEAR('classicmodels orders'[orderDate].[Date]))
 
 ## Conclusion:
 The Classic Cars Sales Dashboard provides valuable insights into the company's sales performance, customer behavior, and product trends. By leveraging Power BI and SQL, Axon can make data-driven decisions to improve sales strategies and enhance customer satisfaction.
