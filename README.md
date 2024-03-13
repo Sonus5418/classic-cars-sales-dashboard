@@ -1,81 +1,59 @@
-# classic-cars-sales-dashboard
+# Classic Cars Sales Dashboard
 
-## CAPSTONE POWER BI PROJECT Problem Statement:
-A small company Axon, which is a retailer selling classic cars, is facing issues in managing and analyzing their sales data. The sales team is struggling to make sense of the data and they do not have a centralized system to manage and analyze the data. The management is unable to get accurate and up-to-date sales reports, which is affecting the decision-making process.
-To address this issue, the company has decided to implement a Business Intelligence (Bl) tool that can help them manage and analyze their sales data effectively. They have shortlisted Microsoft Power BI and SQL as the Bl tools for this project.
-## Task: 
- The goal of the capstone project is to design and implement a Bl solution using Power BI and SQL that can help the company manage and analyze their sales data effectively. 
-## EER DIAGRAM: 
- 
- ![EER DIAGRAM](https://github.com/Sonus5418/classic-cars-sales-dashboard/blob/main/eer%20%20diagram.jpg)
+## CAPSTONE POWER BI PROJECT
 
+### Problem Statement:
+A small company named Axon, which is a retailer selling classic cars, is facing issues in managing and analyzing their sales data. The sales team is struggling to make sense of the data, and they do not have a centralized system to manage and analyze the data. The management is unable to get accurate and up-to-date sales reports, which is affecting the decision-making process.
 
- 
+To address this issue, the company has decided to implement a Business Intelligence (BI) tool that can help them manage and analyze their sales data effectively. They have shortlisted Microsoft Power BI and SQL as the BI tools for this project.
+
+### Task:
+The goal of the capstone project is to design and implement a BI solution using Power BI and SQL that can help the company manage and analyze their sales data effectively.
+
+## EER DIAGRAM:
+
+![EER DIAGRAM](https://github.com/Sonus5418/classic-cars-sales-dashboard/blob/main/eer%20%20diagram.jpg)
+
 ## Tools Used:
--My Sql
--Pivot Table and charts
--Power BI
--Power Query
--Dax Query
--Canva
-## Classic Model Car’s Dashboard : 
-         Sales View – To display the top-performing and bottom-performing Products with different key metrics. 
-         Employee View – This includes the integrated view of key insights for Employees.
-         Key Insights – To display the findings or key insights we learnt from analysis.
-        
+- MySQL
+- Pivot Tables and Charts
+- Power BI
+- Power Query
+- DAX Query
+- Canva
 
-## SANPSHOTS:
+## :bar_chart: Classic Model Car’s Dashboard:
+- **Sales View:** Display the top-performing and bottom-performing products with different key metrics.
+- **Employee View:** Integrated view of key insights for employees.
+- **Key Insights:** Display the findings or key insights learned from the analysis.
+
+## :camera_flash: SANPSHOTS:
+
 ![SALES VIEW](https://github.com/Sonus5418/classic-cars-sales-dashboard/blob/main/classic%20cars%20dashboards/classic%20car%201.jpg)
 ![EMPLOYEE VIEW](https://github.com/Sonus5418/classic-cars-sales-dashboard/blob/main/classic%20cars%20dashboards/classic%20car%202.jpg)
 ![KEY INSIGHTS](https://github.com/Sonus5418/classic-cars-sales-dashboard/blob/main/classic%20cars%20dashboards/classic%20car%203.jpg)
-## Project Execution
-Step – 1 The first step was to load the (mysqlsampledatabase)data into MySQL Database and connect it to the Power BI.
 
-Step – 2 Review the Database relationship created by Power BI.
-
-Step – 3 Data validation using some tables in Power BI and matching the values with the data provided.
-
-Step – 4 Transform and clean the Data as needed using Power Query Editor within Power BI Desktop. This involves renaming columns, removing null values , removing unnecessary column like: image.
-
-Step – 5 Created columns in Power Query like Employee that concatenate the firstName and lastName of Employee
-
-Step – 7 Created calculated columns using DAX formulas (Formulas listed at the bottom). After the columns were created, verified them in either MySQL or Excel file.
-
-Step – 8 Build visualization by dragging fields from your data tables onto the canvas in Power BI Desktop.
+## Project Execution:
+1. **Prepare Import:** Load the `mysqlsampledatabase` data into the MySQL Database and connect it to Power BI.
+2. **Review Database Relationship:** Review the database relationship created by Power BI.
+3. **Data Validation:** Validate the data using tables in Power BI and match the values with the provided data.
+4. **Data Transformation:** Transform and clean the data as needed using Power Query Editor within Power BI Desktop. This involves renaming columns, removing null values, and removing unnecessary columns like images.
+5. **Column Creation:** Create columns in Power Query, like the Employee column, that concatenates the firstName and lastName of the employee.
+6. **Calculated Columns:** Create calculated columns using DAX formulas. Verify them in either MySQL or Excel files.
+7. **Visualization:** Build visualizations by dragging fields from data tables onto the canvas in Power BI Desktop.
 
 ## Key Findings:
-· USA, Spain and France are the three countries, the most of the sales comes from over the years.
-
-· The Sales was in the Peak in November may because holiday season and end-of-year festivities (like: Thanksgiving , Black Friday etc.). Many individuals may choose to purchase classic cars as gifts for 
-  themselves or loved ones during this time, leading to increased sales.
-  
-· The Total Orders placed by customers are 2996 and the Total Sales of the Company is $9.6 Million and made profit of $ 3.8 Million.
-  
-· Total Distinct customer are 94. Most of the Customers are from USA.
-
-· The Total employee count of the company is 22.
-
-· Total no. of Products are 110. Most of the Product is Classic Cars.
-
-· Classic Cars, Vintage Cars and Motor Cycles are the three product Categories earned more profit among the categories.
-
-· 1992 Ferrari 360 Spider Red was the Top most selling car following by 2001 Ferrari Enzo and 1952 Alpine Renault 1300.
-
-· Euro+ Shopping Channel, Mini Gifts Distribution Ltd., and Australian Collectors Co., are the 3 top customers bought products in high numbers.
-
-· Gerald Hernandez, Leslie Jennings and Pamela Castillo are the three sales representatives who achieved better sales target compare to others.
-
-· Barry Jones and Pamela Castillo have most no. of Customers.
-## PROJECT STRUCTURE:
-classic-cars-sales-dashboard/
-│
-├── classic_cars_dashboards/
-│   ├── classic_car_1.jpg
-│   └── classic_car_2.jpg
-│    └── classic_car_3.jpg
-├── eer_diagram.jpg
-└── README.md
-
+- The top three countries with the most sales are USA, Spain, and France.
+- Sales peak in November, possibly due to holiday season festivities.
+- Total orders placed by customers are 2996, with total sales of $9.6 million and a profit of $3.8 million.
+- There are 94 distinct customers, most of whom are from the USA.
+- The company has 22 employees.
+- There are 110 products in total, with Classic Cars being the most common.
+- Classic Cars, Vintage Cars, and Motorcycles are the most profitable product categories.
+- The top-selling cars are 1992 Ferrari 360 Spider Red, 2001 Ferrari Enzo, and 1952 Alpine Renault 1300.
+- Euro+ Shopping Channel, Mini Gifts Distribution Ltd., and Australian Collectors Co. are the top three customers.
+- Gerald Hernandez, Leslie Jennings, and Pamela Castillo are the top-performing sales representatives.
+- Barry Jones and Pamela Castillo have the most customers.
 
 ## Measures Created(DAX):
 1.	Total Sales	= SUMX('classicmodels orderdetails','classicmodels orderdetails'[quantityOrdered] * 'classicmodels orderdetails'[priceEach])
@@ -94,6 +72,14 @@ classic-cars-sales-dashboard/
 
 8.	Last year sales	= CALCULATE(SUMX('classicmodels orderdetails','classicmodels orderdetails'[quantityOrdered] * 'classicmodels orderdetails'[priceEach]),
                  SAMEPERIODLASTYEAR('classicmodels orders'[orderDate].[Date]))
+
+## Conclusion:
+The Classic Cars Sales Dashboard provides valuable insights into the company's sales performance, customer behavior, and product trends. By leveraging Power BI and SQL, Axon can make data-driven decisions to improve sales strategies and enhance customer satisfaction.
+
+For more detailed insights, refer to the Power BI reports and analysis provided in the dashboard screenshots.
+
+---
+
 
 
 
