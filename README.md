@@ -23,10 +23,7 @@ To address this issue, the company has decided to implement a Business Intellige
          Employee View – This includes the integrated view of key insights for Employees.
          Key Insights – To display the findings or key insights we learnt from analysis.
         
-![sales view](https://github.com/Sonus5418/classic-cars-sales-dashboard/blob/main/classic%20cars%20dashboards/classic%20car%201.jpg)
 
-![Employee view](classic cars dashboards/classic car 2.jpg)
-        
 
 ## Project Execution
 Step – 1 The first step was to load the (mysqlsampledatabase)data into MySQL Database and connect it to the Power BI.
